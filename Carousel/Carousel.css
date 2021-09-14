@@ -1,0 +1,44 @@
+.slider {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+.Image {
+	width: 1000px;
+	height: 500px;
+	border-radius: 10px;
+}
+.left-arrow {
+	
+	z-index: 10;
+	user-select: none;
+	cursor: pointer;
+}
+.right-arrow {
+	position :absolute;
+	bottom:-50;
+	z-index: 10;
+
+	user-select: none;
+	cursor: pointer;
+}
+.right-arrow :hover {
+}
+
+.slide {
+	opacity: 1;
+	transition-duration: 2s ease;
+}
+.slide .active {
+	opacity: 2;
+	transition-duration: 1s;
+	transform: scale(1.88);
+}
+.slide-content {
+	border-radius: 39px;
+	box-shadow: -27px 27px 29px #b0b0b0, 27px -27px 29px #eaeaea;
+	padding: 25px;
+}
